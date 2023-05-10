@@ -1,5 +1,5 @@
 # HPC_conda_PoPS
-This repo provides YAML for conda to run PoPS along with sample batch script and some explanation.
+This repo provides YAML for conda to run PoPS along with sample batch script and some explanation. The PoPS version is 2.0.1.
 
 Use the pops_env.yml to set up a conda env that has the PoPS dependencies.
 
