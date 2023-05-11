@@ -40,7 +40,7 @@ conda command to create an environment:
 A conda prompt should appear. It'll look something like:
 `(/path/to/hold/dependencies/pops_env) japolo@login01:~$`
 
-**3. & 4.** [start R here]
+**3. & 4.** Start R inside the conda env and then install PoPS inside R inside conda. ;)
 
 ```
 (/path/to/hold/dependencies/pops_env) japolo@login01:~$ R
@@ -57,7 +57,7 @@ Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 Once PoPS is installed and R is closed, deactivate conda with:
 
-`(/path/to/hold/dependencies/pops_env) conda deactivate`
+`(/path/to/hold/dependencies/pops_env) japolo@login01:~$ conda deactivate`
 
 
 PoPS is now part of your pops_env. In order to process jobs with it, need to switch to a job queue. Do that with:
@@ -87,7 +87,7 @@ JOB: PoPS calibration with SLF 1 km
     Run time :                                   3751 sec.
     Turnaround time :                            3726 sec.
 
-[The process used around 4 GB for a little over an hour.]
+Job Summary: The process used around 4 GB for a little over an hour.
 
 JOB: PoPS validation of SLF 1 km
 
@@ -102,7 +102,7 @@ JOB: PoPS validation of SLF 1 km
     Run time :                                   143 sec.
     Turnaround time :                            119 sec.
 
-The job used a max of 11 GB. The job was a couple of minutes.
+Job Summary: The job used a max of 11 GB. The job was a couple of minutes.
 
 JOB: A PoPS multirun with SLF 1 km
 
@@ -117,7 +117,7 @@ JOB: A PoPS multirun with SLF 1 km
     Run time :                                   269 sec.
     Turnaround time :                            264 sec.
 
-The job used a max of 18 GB. Job took less than 5 m.
+Job Summary: The job used a max of 18 GB. Job took less than 5 m.
 
 
-Use those values to supply the arguments to the batch script, an example of which is part of the repo. 
+Use those values from the Job Summary as guides to supply the arguments to the batch script, an example of which is part of the repo. 
