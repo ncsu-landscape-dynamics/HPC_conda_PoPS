@@ -16,7 +16,7 @@ There are basically four steps:
 3. Start R in the conda env
 4. Install PoPS in R
 
-**1.** This is the step requires more attention than the rest. 
+**1.** This is the step that requires more attention than the rest. 
 
 HPC requires loading apps each time:
 
@@ -27,7 +27,7 @@ https://hpc.ncsu.edu/Software/Apps.php?app=Conda
 
 You only need to do the initialization once. You don't need to do it every time you want to use conda on HPC. However, you do need the `module load conda` each time you're in a new session on the HPC. **You should also read** the 2nd section of that HPC conda page about where to set up your path for storing the libraries that are installed for your conda environment. 
 
-After those steps, you're read to use conda regularaly. 
+After those steps, you're read to use conda regularly. 
 
 conda command to create an environment:
 
