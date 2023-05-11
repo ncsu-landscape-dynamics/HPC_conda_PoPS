@@ -60,14 +60,16 @@ Once PoPS is installed and R is closed, deactivate conda with:
 `(/path/to/hold/dependencies/pops_env) japolo@login01:~$ conda deactivate`
 
 
-PoPS is now part of your pops_env. In order to process jobs with it, need to switch to a job queue. Do that with:
-
-`cd /share/rkmeente/$userid`
-
-Then submit a batch request with a bash script. There is an example of the bash script in this repo.
+PoPS is now part of your pops_env. **From this point on, as long as you're using the same conda env, you just need to do the following each time you start a new session for running jobs on the HPC** 
+```
+module load conda
+conda activate /path/to/hold/dependencies/pops_env
+```
+You can find these two lines inside the sample batch script. If you are using an interactive process session, you use those two lines as well, but you run them manually, since the interactive session doesn't use scripts. There is an example of the batch script in this repo.
 
 Example batch request submission on next line. My script in this example is popsbashjob.sh
-*Note the < and not <- for this. I'm used to "<-" from R.*
+
+*Note the "<" and not "<-" for this. I'm used to "<-" from R.*
 
 `bsub < popsbashjob.sh`
 
