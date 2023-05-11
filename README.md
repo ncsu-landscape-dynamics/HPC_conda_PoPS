@@ -1,14 +1,25 @@
 # HPC_conda_PoPS
-This repo provides YAML for conda to run PoPS along with sample batch script and some explanation. The PoPS version is 2.0.1.
+This repo provides YAML for conda to run PoPS along with sample batch script and some explanation. This set up works for PoPS v2.0.1.
 
 Use the pops_env.yml to set up a conda env that has the PoPS dependencies.
 
 Have to be on a login node. On the HPC, that is denoted with a prompt like:
 `japolo@login01:~$`
+The other prompt you can possibly have is on a compute/job/process node. That looks like:
+`japolo@login01:japolo$` 
+
+We won't be using the compute node for this process. You'll send your jobs from there, but for install, you do that on login node.
 
 HPC requires loading apps each time:
 
 `module load conda`
+
+**_If you have NOT run conda on HPC before, you need to read and follow the steps under Loading and Initializing Conda that are found here:_**
+https://hpc.ncsu.edu/Software/Apps.php?app=Conda
+
+You only need to do the initialization once. You don't need to do it every time you want to use conda on HPC. However, you do need the `module load conda` each time you're in a new session on the HPC. **You should also read** the 2nd section of that HPC conda page about where to set up your path for storing the libraries that are installed for your conda environment. 
+
+After those steps, you're read to use conda regularaly. 
 
 conda command to create an environment:
 
