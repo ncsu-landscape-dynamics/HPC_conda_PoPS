@@ -8,7 +8,15 @@ Have to be on a login node. On the HPC, that is denoted with a prompt like:
 The other prompt you can possibly have is on a compute/job/process node. That looks like:
 `japolo@login01:japolo$` 
 
-We won't be using the compute node for this process. You'll send your jobs from there, but for install, you do that on login node.
+We won't be using the compute node for this process. You'll send your jobs from there, but for install, you do that on login node. 
+
+There are basically four steps:
+1. Create conda env
+2. Start conda env
+3. Start R in the conda env
+4. Install PoPS in R
+
+**1.** This is the step requires more attention than the rest. 
 
 HPC requires loading apps each time:
 
@@ -25,14 +33,14 @@ conda command to create an environment:
 
 `conda env create -p /path/to/hold/dependencies -f pops_env.yml`
 
-Start the conda environment to run R:
+**2.** Start the conda environment to run R:
 
 `conda activate /path/to/hold/dependencies/pops_env`
 
 A conda prompt should appear. It'll look something like:
 `(/path/to/hold/dependencies/pops_env) japolo@login01:~$`
 
-[start R here]
+**3. & 4.** [start R here]
 
 ```
 (/path/to/hold/dependencies/pops_env) japolo@login01:~$ R
@@ -56,13 +64,15 @@ PoPS is now part of your pops_env. In order to process jobs with it, need to swi
 
 `cd /share/rkmeente/$userid`
 
-Then submit a batch request with a bash script. There is an example of the bash script at bottom.
+Then submit a batch request with a bash script. There is an example of the bash script in this repo.
 
+Example batch request submission on next line. My script in this example is popsbashjob.sh
 *Note the < and not <- for this. I'm used to "<-" from R.*
 
 `bsub < popsbashjob.sh`
 
-This next section has excerpts from the output files you get after a job finishes.
+---
+This next section has excerpts from the output files you get after a job finishes. They provide an idea of the resources used for each step in PoPS, calibration, validation, and multirun.
 
 JOB: PoPS calibration with SLF 1 km
 
