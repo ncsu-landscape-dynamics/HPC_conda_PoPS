@@ -1,0 +1,55 @@
+name: pops_env
+channels:
+  - conda-forge
+dependencies:
+  - r >=4.3
+  - r-aws.s3
+  - r-aws.signature
+  - r-R6
+  - r-cli >= 3.3.0
+  - r-colorspace
+  - r-curl
+  - r-desc >= 1.4.1
+  - r-digest
+  - r-doParallel
+  - r-fansi
+  - r-farver
+  - r-foreach
+  - r-ggplot2
+  - r-generics
+  - r-glue
+  - r-gtable
+  - r-httr
+  - r-isoband
+  - r-iterators
+  - r-jsonlite
+  - r-labeling
+  - r-lifecycle >= 1.0.1
+  - r-landscapemetrics
+  - r-lubridate
+  - r-matrix
+  - r-metrics
+  - r-mime
+  - r-mgcv
+  - r-magrittr
+  - r-munsell
+  - r-nlme
+  - r-openssl
+  - r-pillar
+  - r-pkgconfig
+  - r-remotes >= 2.4.2
+  - r-rlang >= 1.0.4
+  - r-scales
+  - r-sys
+  - r-testthat >= 3.1.5
+  - r-tibble
+  - r-timechange
+  - r-utf8
+  - r-vctrs
+  - r-withr >= 2.5.0
+  - r-curl
+  - r-terra >= 1.7-65
+  - r-Rcpp
+  - r-RcppArmadillo
+  - r-viridislite
+  - r-xml2
