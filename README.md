@@ -30,6 +30,7 @@ You only need to do the initialization once. You don't need to do it every time 
 After those steps, you're read to use conda regularly. 
 
 conda command to create an environment:
+
 **IF THE ENVIRONMENT** is already created and you want to modify it, say due to change in version dependencies, you have to delete the existing environment. Do that with
 
 `conda delete -p /path/to/directory/with/dependencies --all`
