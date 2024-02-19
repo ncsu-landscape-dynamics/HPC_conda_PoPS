@@ -33,7 +33,7 @@ conda command to create an environment:
 
 **IF THE ENVIRONMENT** is already created and you want to modify it, say due to change in version dependencies, you have to delete the existing environment. Do that with
 
-`conda delete -p /path/to/directory/with/dependencies --all`
+`conda env remove -p /path/to/directory/with/dependencies`
 
 Once that is done or if the environment is brand new:
 
