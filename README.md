@@ -27,7 +27,9 @@ https://hpc.ncsu.edu/Software/Apps.php?app=Conda
 
 You only need to do the initialization once. You don't need to do it every time you want to use conda on HPC. However, you do need the `module load conda` each time you're in a new session on the HPC. **You should also read** the 2nd section of that HPC conda page about where to set up your path for storing the libraries that are installed for your conda environment. 
 
-After those steps, you're read to use conda regularly. 
+After those steps, you're read to use conda regularly. The pops_env.yml file should be in your current directory. If you don't know how to check use
+`ls`
+and the list of files after that should includ the pops_env.yml. If it's not there, transfer or copy into current directory.
 
 conda command to create an environment:
 
