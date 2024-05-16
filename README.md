@@ -29,7 +29,7 @@ You only need to do the initialization once. You don't need to do it every time 
 
 After those steps, you're read to use conda regularly. The pops_env.yml file should be in your current directory. If you don't know how to check use
 `ls`
-and the list of files after that should includ the pops_env.yml. If it's not there, transfer or copy into current directory.
+and the list of files after that should includ the pops_env.yml. If it's not there, transfer or copy the file into current directory.
 
 conda command to create an environment:
 
