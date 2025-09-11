@@ -1,5 +1,5 @@
-# The dependencies for PoPS V3 as of 2025/09/10
-# Use commit: 8b45272e6d4531bcaa0689fada59ddc26790810e
+# The dependencies for PoPS V3 as of 2025/07/23
+# Use commit: 749a748c2e7ab2667e639bc92e3103285a496700
 # remotes::install_github("ncsu-landscape-dynamics/rpops", ref = "749a748c2e7ab2667e639bc92e3103285a496700")
 name: pops_env
 channels:
